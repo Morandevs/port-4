@@ -1,0 +1,184 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 62.5%;
+  font-weight: 300;
+  color: black;
+}
+
+header,
+section,
+footer {
+  font-size: 1.6em;
+}
+
+.about__01__01 span,
+.about__02__02 span,
+.contact__git__04 span {
+  color: #0B6890;
+}
+
+header {
+  color: white;
+}
+
+.header__greet {
+  font-size: 1.6em;
+}
+
+.header__name {
+  font-family: "Playfair Display", serif;
+  font-size: 8em;
+  font-weight: bold;
+}
+
+.header__description {
+  font-size: 1.4em;
+}
+
+.about {
+  color: black;
+}
+
+.about__01__01,
+.about__02__02,
+.gallery__03 {
+  color: #B5B5B5;
+  font-family: "Playfair Display", serif;
+  font-size: 5.8em;
+  font-weight: bold;
+}
+
+.about__01__subtitle-01,
+.about__02__subtitle-02,
+.gallery__subtitle {
+  color: #0B6890;
+  font-family: "Playfair Display", serif;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+.about__01__subtitle-01 span,
+.about__02__subtitle-02 span,
+.gallery__subtitle span {
+  color: #B5B5B5;
+}
+
+.about__01__description-01,
+.about__02__description-02 {
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+.gallery__subtitle {
+  text-align: right;
+  line-height: 1.2em;
+}
+
+.gallery__card {
+  color: white;
+}
+
+.gallery__overlay {
+  text-align: center;
+}
+
+.gallery__card__title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8em;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+.gallery__card__subtitle {
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+}
+
+.quote__text {
+  width: 90vw;
+  color: #0B6890;
+  font-family: "Playfair Display", serif;
+  line-height: 1.4em;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.quote__text span {
+  color: #B5B5B5;
+}
+
+.contact__git {
+  color: #B5B5B5;
+}
+
+.contact__git__04 {
+  color: #B5B5B5;
+  font-family: "Playfair Display", serif;
+  font-size: 7.8em;
+  font-weight: bold;
+}
+
+.contact__git__title {
+  color: #0B6890;
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.contact__text,
+.contact__date {
+  letter-spacing: 0.2em;
+}
+
+.contact__btn {
+  color: #0B6890;
+  font-size: 0.8em;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.info__email-text,
+.info__skype-text,
+.info__social-text,
+.info__tel-text {
+  color: #B5B5B5;
+  font-size: 0.8em;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.info__email,
+.info__skype,
+.info__tel {
+  color: #0B6890;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+footer {
+  color: white;
+}
+
+@media screen and (max-width: 994px) and (min-width: 320px) {
+  body {
+    font-size: 50%;
+  }
+
+  .header__name {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .header__description {
+    display: none;
+  }
+
+  .gallery__subtitle {
+    font-size: 2em;
+  }
+}
+
+/*# sourceMappingURL=font.css.map */

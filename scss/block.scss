@@ -1,0 +1,290 @@
+@import 'partials/colors';
+//  <!---------------------------------------------------------------------------------------------------->
+//  <!----------- MAX WIDTH : 9999px - 1370px ------------------------------------------------------------>
+//  <!---------------------------------------------------------------------------------------------------->
+
+
+// <!----------- HEADER ----------->
+header
+{
+    width: 100vw;
+
+    height:           100vh;
+    position:         relative;
+    display:          flex;
+    flex-direction:   column;
+    align-items:      center;
+    justify-content:  center;
+
+    .header__mouse
+    {
+        position:       relative;
+        top:            12rem;
+        display:        flex;
+        flex-direction: column;
+        animation:      mouseBounce 2.4s infinite alternate ease-in-out; 
+
+        .header__mouse-ico
+        {
+            margin-bottom: 0.4rem;
+        }
+    }
+}
+
+@keyframes mouseBounce
+{
+    0% { transform: translateY(-15px); }
+}
+  
+
+
+// <!----------- ABOUT ----------->
+.about__01, 
+.about__02
+{
+    position:        relative;
+    min-height:      1000px;
+    width:           100vw;
+    display:         flex;
+    justify-content: space-around; 
+    align-items:     center;
+}
+
+// ABOUT 01
+
+// ABOUT 02
+.about__02
+{
+    flex-direction: row-reverse;
+}
+
+// <!----------- GALLERY ----------->
+.gallery
+{
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
+}
+
+.gallery__wrap
+{
+    display:   flex;
+    flex-wrap: wrap;
+}
+
+.gallery__img
+{
+    padding:   0.5rem 0.55rem; // Higher padding will stretch and misplace the pictures
+    overflow:  hidden;
+    flex-grow: 1; // Without this the pics don't fill the whole space
+}
+
+
+
+.gallery__card
+{
+    position:        relative;
+    height:          10%;
+    padding:         0.5rem 0.55rem;
+    display:         flex;
+    justify-content: center;
+    align-content:   center;
+    text-align:      center;
+}
+
+
+
+
+// <!----------- QUOTE ----------->
+.quote
+{
+    height:      100vh;
+    display:     flex;
+    align-items: center;
+}
+  
+
+
+// <!----------- CONTACT ----------->
+.contact
+{
+    min-height:      700px;
+    width:           100vw;
+    display:         flex;
+    justify-content: space-evenly;
+    align-items:     center;
+}
+
+.contact__git, 
+.contact__info
+{
+    margin: 2rem;
+}
+
+
+// CONTACT__GIT
+.contact__git
+{
+    max-width: 370px;
+}
+
+// CONTACT_INFO
+.contact__info
+{
+  max-width:       500px;
+  display:         flex;
+  flex-direction:  row;
+  flex-wrap:       wrap;
+  justify-content: space-between;
+  align-content:   stretch;
+  align-items:     stretch;
+}
+
+.break
+{
+    display: block;
+    height:  1px;
+    width:   100%;
+}
+  
+
+
+// <!----------- FOOTER ----------->
+footer
+{
+    overflow-x: hidden;
+
+    position:       relative;
+    width:          100%;
+    height:         380px;
+    color:       #FFF;
+    display:        flex;
+    flex-direction: column;
+}
+
+
+
+
+//  <!--------------------------------------------------------------------------------------------------->
+//  <!----------- MID WIDTH : 1369px - 995px ------------------------------------------------------------>
+//  <!--------------------------------------------------------------------------------------------------->
+@media screen
+and (max-width: 1369px)
+and (min-width: 995px)
+{
+    // <!----------- HEADER ----------->
+    header .header__mouse
+    {
+        top: 6rem;
+    }
+  
+    // <!----------- ABOUT ----------->
+
+    .about__01,
+    .about__02
+    {
+        width:          995px;
+        flex-direction: column;
+        margin-bottom:  15rem;
+        padding-top:    5rem;
+    }
+    
+    // ABOUT 01
+    
+
+    // ABOUT 02
+    .about__02
+    {
+        flex-direction: column-reverse;
+    }
+
+
+  
+    // <!----------- GALLERY ----------->
+    .gallery__img
+    {
+        width:     auto;
+        height:    350px;
+        flex-grow: 0;
+    }
+
+   .gallery__card
+   {
+        height: 350px;
+   }
+    
+
+
+    // <!----------- QUOTE ----------->
+
+    // <!----------- CONTACT ----------->
+
+    // CONTACT__GIT
+
+    // CONTACT_INFO
+  
+
+
+    // <!----------- FOOTER ----------->
+    footer
+    {
+        left:-5rem; // Both of these... 
+    }
+
+    .footer__mark
+    {
+        margin-left: 10rem; // ...are hacks, I'm so sorry.
+    }
+}
+
+
+
+//  <!-------------------------------------------------------------------------------------------------->
+//  <!----------- MIN WIDTH : 994px - 320px ------------------------------------------------------------>
+//  <!-------------------------------------------------------------------------------------------------->
+@media screen
+and (max-width: 994px)
+and (min-width: 320px)
+{
+    // <!----------- HEADER ----------->
+    header
+    {
+        min-height: 500px;
+        .header__mouse
+        {
+            top: 1rem;
+        }
+    }
+      
+    // <!----------- ABOUT ----------->
+    .about__01,
+    .about__02
+    {
+        flex-direction:  column;
+        justify-content: center;
+    }
+
+    // ABOUT 01
+
+
+    // ABOUT 02
+    .about__02
+    {
+        margin-bottom:  4rem;
+        flex-direction: column-reverse;
+    }
+
+    
+      
+    // <!----------- GALLERY ----------->
+    
+    // <!----------- QUOTE ----------->
+      
+    // <!----------- CONTACT ----------->
+    
+    // CONTACT__GIT
+    
+    // CONTACT_INFO
+    
+    // <!----------- FOOTER ----------->
+}

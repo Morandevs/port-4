@@ -1,0 +1,302 @@
+@import 'partials/colors';
+
+body
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size:    62.5%;
+    font-weight:  300;
+    color:      black;
+}
+
+header, 
+section, 
+footer
+{
+    font-size: 1.6em;
+}
+
+.about__01__01,
+.about__02__02,
+.contact__git__04
+{
+    span
+    {
+        color: $blue;
+    }
+}
+
+//  <!---------------------------------------------------------------------------------------------------->
+//  <!----------- MAX WIDTH : 9999px - 1370px ------------------------------------------------------------>
+//  <!---------------------------------------------------------------------------------------------------->
+// <!----------- HEADER ----------->
+header
+{
+    color: white; 
+}
+
+.header__greet
+{
+    font-size: 1.6em;
+}  
+
+.header__name
+{
+    font-family: 'Playfair Display', serif;
+    font-size:    8em;
+    font-weight:  bold;
+}
+
+.header__description
+{
+    font-size: 1.4em;
+}
+
+// <!----------- ABOUT #1 & #2 ----------->
+.about
+{
+    color: black;
+}
+
+.about__01__01, 
+.about__02__02, 
+.gallery__03
+{
+    color:       $grey;
+    font-family: 'Playfair Display', serif;
+    font-size:    5.8em;
+    font-weight:  bold;
+}
+
+.about__01__subtitle-01, 
+.about__02__subtitle-02, 
+.gallery__subtitle
+{
+    color:       $blue;
+    font-family: 'Playfair Display', serif;
+    font-size:    3.5em;
+    font-weight:  bold;
+}
+
+.about__01__subtitle-01 span, 
+.about__02__subtitle-02 span, 
+.gallery__subtitle span
+{
+    color: $grey;
+}
+
+.about__01__description-01, 
+.about__02__description-02
+{
+    font-size:   1.2em;
+    line-height: 1.8em;
+}
+
+// <!----------- ABOUT #1 ----------->
+
+  
+// <!------------ GALLERY ----------->
+
+.gallery__subtitle
+{
+    text-align:  right;
+    line-height: 1.2em;
+}
+
+.gallery__card // Change to white after bg is set
+{
+    color: white;
+}
+
+.gallery__overlay
+{
+    text-align: center;
+}
+
+.gallery__card__title
+{   // REFACTOR repeats
+    font-family: 'Playfair Display', serif;
+    font-size:    2.8em;
+    font-weight:  bold;
+    line-height:  3rem;
+}
+.gallery__card__subtitle
+{
+    letter-spacing: 0.2rem;
+    line-height:    2rem;
+}
+
+  
+// <!----------- QUOTE ----------->
+.quote__text
+{   // REFACTOR repeats
+    width: 90vw;
+    color:       $blue;
+    font-family: 'Playfair Display', serif;
+    line-height:  1.4em;
+    text-align:   center;
+    font-size:    2.2em;
+    font-weight:  bold;
+}
+
+.quote__text span
+{
+    color: $grey;
+}
+  
+// <!----------- CONTACT ----------->
+
+// CONTACT_GIT
+.contact__git
+{
+    color: $grey;
+}
+
+.contact__git__04
+{
+    color:       $grey;
+    font-family: 'Playfair Display', serif;
+    font-size:    7.8em;
+    font-weight:  bold;
+}
+
+.contact__git__title
+{
+    color:       $blue;
+    font-family: 'Playfair Display', serif;
+    font-size:    3em;
+    font-weight:  bold;
+}
+
+.contact__text, 
+.contact__date
+{
+    letter-spacing: 0.2em;
+}
+
+
+.contact__btn
+{
+    color:          $blue;
+    font-size:      0.8em;
+    font-weight:    100;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+
+// CONTACT_INFO
+
+
+.info__email-text, 
+.info__skype-text, 
+.info__social-text, 
+.info__tel-text
+{
+    color:         $grey;
+    font-size:      0.8em;
+    letter-spacing: 0.2rem;
+    margin-bottom:  1rem;
+}
+
+.info__email, 
+.info__skype, 
+.info__tel
+{
+    color:       $blue;
+    font-family: 'Playfair Display', serif;
+    font-size:    1.5em;
+    font-weight:  bold;
+}
+
+// <!----------- FOOTER ----------->
+footer
+{
+    color: white;
+}
+
+//  <!--------------------------------------------------------------------------------------------------->
+//  <!----------- MID WIDTH : 1369px - 995px ------------------------------------------------------------>
+//  <!--------------------------------------------------------------------------------------------------->
+@media screen
+and (max-width: 1369px)
+and (min-width: 995px)
+{
+    // <!----------- HEADER ----------->
+       
+      
+    // <!----------- ABOUT ----------->
+
+    
+    // ABOUT 01
+
+      
+    // <!----------- GALLERY ----------->
+   
+    
+    // <!----------- QUOTE ----------->
+    
+    
+    // <!----------- CONTACT ----------->
+    
+    
+    // CONTACT__GIT
+    
+    
+    // CONTACT_INFO
+    
+      
+    // <!----------- FOOTER ----------->
+}
+
+//  <!-------------------------------------------------------------------------------------------------->
+//  <!----------- MIN WIDTH : 994px - 320px ------------------------------------------------------------>
+//  <!-------------------------------------------------------------------------------------------------->
+@media screen
+and (max-width: 994px)
+and (min-width: 320px)
+{
+    body
+    {
+        font-size: 50%;
+    }
+
+    // <!----------- HEADER ----------->
+    .header__name
+    {
+        font-size:  4em;
+        text-align: center;
+    }
+
+    .header__description
+    {
+        display: none;
+    }
+      
+    // <!----------- ABOUT ----------->
+
+    
+    // ABOUT 01
+
+    
+      
+    // <!----------- GALLERY ----------->
+    .gallery__subtitle
+    {
+        font-size: 2em;
+    }
+    
+    
+    // <!----------- QUOTE ----------->
+    
+      
+    // <!----------- CONTACT ----------->
+    
+    
+    // CONTACT__GIT
+    
+    
+    // CONTACT_INFO
+    
+      
+    // <!----------- FOOTER ----------->
+}
